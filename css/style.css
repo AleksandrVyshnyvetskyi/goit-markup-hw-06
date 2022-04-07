@@ -379,13 +379,9 @@ transition-delay: 0;
   align-items: center;
 }
 
-.label-box {
-  min-height: 58px;
-  margin-bottom: 10px;
-}
-
 .label-text {
   min-height: 58px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   margin-bottom: 8px;
@@ -410,6 +406,10 @@ transition-delay: 0;
   color: var(--theme-accent);
 }
 
+.label-text:focus-within {
+  color: var(--theme-accent);
+}
+
 .regtangle {
   width: 448px;
   height: 40px;
@@ -427,7 +427,6 @@ transition-delay: 0;
   color: var(--theme-accent);
   border: 1px solid var(--theme-accent);
   border-radius: 2px;
-  
 }
 
 .text-area {
