@@ -21,10 +21,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-
   <body>
-
-
     <!-- Шапка -->
 
     <header class="header-padding">
@@ -70,10 +67,7 @@
       </div>
     </header>
 
-
-
     <main class="content">
-
       <!-- Герой -->
 
       <section class="hero overlay">
@@ -92,34 +86,72 @@
         <div class="modal">
           <div class="backdrop-form">
             <button class="backdrop-btn" data-modal-close>
-              <svg class="close-btn" width="18" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M15 4.108 13.892 3 9.5 7.392 5.108 3 4 4.108 8.392 8.5 4 12.892 5.108 14 9.5 9.608 13.892 14 15 12.892 10.608 8.5 15 4.108Z"/></svg>
+              <svg width="18" height="18">
+                <use href="./images/sprite.svg#icon-svgclose"></use>
               </svg>
             </button>
             <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
             <form class="form-contact">
-                <label class="label-text" >
+              <label class="label-text">
                 Имя
-                <input class="regtangle" type="text" name="username" required autofocus/> 
-                </label>
-                <label class="label-text">
+                <span class="label-item-box"
+                  ><input
+                    class="regtangle"
+                    type="text"
+                    name="username"
+                    required
+                    autofocus />
+                  <svg class="label-item" width="18" height="18">
+                    <use
+                      href="./images/sprite.svg#icon-svgperson-black"
+                    ></use></svg
+                ></span>
+              </label>
+              <label class="label-text">
                 Телефон
-                <input class="regtangle" type="tel" name="tel" required />
-                 </label>
-                <label class="label-text">
+                <span class="label-item-box"
+                  ><input class="regtangle" type="tel" name="tel" required />
+                  <svg class="label-item" width="18" height="18">
+                    <use
+                      href="./images/sprite.svg#icon-svgphone-black"
+                    ></use></svg
+                ></span>
+              </label>
+              <label class="label-text">
                 Почта
-                <input class="regtangle" type="email" name="email" required />
-                </label>
-                <label class="label-text">
+                <span class="label-item-box"
+                  ><input
+                    class="regtangle"
+                    type="email"
+                    name="email"
+                    required />
+                  <svg class="label-item" width="18" height="18">
+                    <use
+                      href="./images/sprite.svg#icon-svgemail-black"
+                    ></use></svg
+                ></span>
+              </label>
+              <label class="label-text">
                 Комментарий
-                <textarea class="regtangle text-area" name="feedback" rows="15" placeholder="Введите текст"></textarea>
-                 </label>
-                 <label>
-            <input class="checkbox" type="checkbox" name="" value="" />
-            Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a>
-            </label>
-            </form> 
-            
-              <button class="btn-sumbit" type="submit">Отправить</button>
+                <textarea
+                  class="regtangle text-area"
+                  name="feedback"
+                  rows="15"
+                  placeholder="Введите текст"
+                ></textarea>
+              </label>
+              <label class="checkbox-box">
+                <input class="checkbox" type="checkbox" name="" value="" /><span
+                  class="checkbox-icon"
+                  ><svg width="13" height="13" fill="#fff">
+                    <use href="./images/sprite.svg#icon-svgVector"></use></svg
+                ></span>
+                Соглашаюсь с рассылкой и принимаю
+                <a class="checkbox-link" href="">Условия договора</a>
+              </label>
+            </form>
+
+            <button class="btn-sumbit" type="submit">Отправить</button>
           </div>
         </div>
       </div>
@@ -257,29 +289,29 @@
               <div class="team-man">
                 <h3 class="team-name">Игорь Демьяненко</h3>
                 <p class="team-text">Product Designer</p>
-                <ul class="team-link">
-                  <li>
+                <ul class="team-link-box">
+                  <li class="team-link">
                     <a href="" class="team-link-item">
                       <svg class="team-link-svg" width="20px" height="20px">
                         <use href="./images/sprite.svg#icon-svgsocial-1"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team-link">
                     <a href="" class="team-link-item">
                       <svg class="team-link-svg" width="20px" height="20px">
                         <use href="./images/sprite.svg#icon-svgsocial-2"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team-link">
                     <a href="" class="team-link-item">
                       <svg class="team-link-svg" width="20px" height="20px">
                         <use href="./images/sprite.svg#icon-svgsocial-3"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team-link">
                     <a href="" class="team-link-item">
                       <svg class="team-link-svg" width="20px" height="20px">
                         <use href="./images/sprite.svg#icon-svgsocial-4"></use>
@@ -299,29 +331,29 @@
               <div class="team-man">
                 <h3 class="team-name">Ольга Репина</h3>
                 <p class="team-text">Frontend Developer</p>
-                <ul class="team-link">
-                  <li>
+                <ul class="team-link-box">
+                  <li class="team-link">
                     <a href="" class="team-link-item">
                       <svg class="team-link-svg" width="20px" height="20px">
                         <use href="./images/sprite.svg#icon-svgsocial-1"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team-link">
                     <a href="" class="team-link-item">
                       <svg class="team-link-svg" width="20px" height="20px">
                         <use href="./images/sprite.svg#icon-svgsocial-2"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team-link">
                     <a href="" class="team-link-item">
                       <svg class="team-link-svg" width="20px" height="20px">
                         <use href="./images/sprite.svg#icon-svgsocial-3"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team-link">
                     <a href="" class="team-link-item">
                       <svg class="team-link-svg" width="20px" height="20px">
                         <use href="./images/sprite.svg#icon-svgsocial-4"></use>
@@ -341,29 +373,29 @@
               <div class="team-man">
                 <h3 class="team-name">Николай Тарасов</h3>
                 <p class="team-text">Marketing</p>
-                <ul class="team-link">
-                  <li>
+                <ul class="team-link-box">
+                  <li class="team-link">
                     <a href="" class="team-link-item">
                       <svg class="team-link-svg" width="20px" height="20px">
                         <use href="./images/sprite.svg#icon-svgsocial-1"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team-link">
                     <a href="" class="team-link-item">
                       <svg class="team-link-svg" width="20px" height="20px">
                         <use href="./images/sprite.svg#icon-svgsocial-2"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team-link">
                     <a href="" class="team-link-item">
                       <svg class="team-link-svg" width="20px" height="20px">
                         <use href="./images/sprite.svg#icon-svgsocial-3"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team-link">
                     <a href="" class="team-link-item">
                       <svg class="team-link-svg" width="20px" height="20px">
                         <use href="./images/sprite.svg#icon-svgsocial-4"></use>
@@ -383,29 +415,29 @@
               <div class="team-man">
                 <h3 class="team-name">Михаил Ермаков</h3>
                 <p class="team-text">UI Designer</p>
-                <ul class="team-link">
-                  <li>
+                <ul class="team-link-box">
+                  <li class="team-link">
                     <a class="team-link-item" href=""
                       ><svg class="team-link-svg" width="20px" height="20px">
                         <use href="./images/sprite.svg#icon-svgsocial-1"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team-link">
                     <a href="" class="team-link-item">
                       <svg class="team-link-svg" width="20px" height="20px">
                         <use href="./images/sprite.svg#icon-svgsocial-2"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team-link">
                     <a href="" class="team-link-item">
                       <svg class="team-link-svg" width="20px" height="20px">
                         <use href="./images/sprite.svg#icon-svgsocial-3"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team-link">
                     <a href="" class="team-link-item">
                       <svg class="team-link-svg" width="20px" height="20px">
                         <use href="./images/sprite.svg#icon-svgsocial-4"></use>
@@ -526,11 +558,30 @@
         </div>
         <div>
           <form class="submit-footer">
-            <label >
+            <label>
               <p class="title-submit-footer">Подпишитесь на рассылку</p>
-              <input class="submit-email-form" type="email" name="email" placeholder="E-mail"/>
+              <input
+                class="submit-email-form"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
             </label>
-            <button class="btn-submit-footer" type="submit">Подписаться <svg class="btn-submit-svg" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 0 0 13.5l7.67 2.84L19.5 5.25l-8.998 12.14.007.002-.009-.002V24l4.301-5.018L20.251 21 24 0Z" fill="#fff"/></svg></button>
+            <button class="btn-submit-footer" type="submit">
+              Подписаться
+              <svg
+                class="btn-submit-svg"
+                width="24"
+                height="24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24 0 0 13.5l7.67 2.84L19.5 5.25l-8.998 12.14.007.002-.009-.002V24l4.301-5.018L20.251 21 24 0Z"
+                  fill="#fff"
+                />
+              </svg>
+            </button>
           </form>
         </div>
       </div>
