@@ -304,11 +304,11 @@ transition-delay: 0;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
-  transition: opacity 250ms;
+  transition: opacity 250ms, visibility 250ms;
 }
 
 .backdrop.is-hidden .backdrop-form {
-  transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%);
 }
 
 .backdrop-form {
@@ -377,6 +377,7 @@ transition-delay: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--main-text-color);
 }
 
 .label-text {
@@ -387,7 +388,6 @@ transition-delay: 0;
   margin-bottom: 8px;
   margin-bottom: 10px;
   color: var(--text-color);
-  fill: currentColor;
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -439,8 +439,18 @@ transition-delay: 0;
 
 .label-item {
   position: absolute;
+  fill: var(--main-text-color);
   top: 15px;
   left: 12px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+
+.label-text:hover .label-item,
+.label-text:focus .label-item {
+  fill: var(--theme-accent);
 }
 
 .text-area {
@@ -467,6 +477,7 @@ color: var(--theme-accent);
   display: flex;
   margin-top: 20px;
   margin-bottom: 30px;
+  color: var(--text-color);
 }
 
 .checkbox {
@@ -490,6 +501,9 @@ color: var(--theme-accent);
 .checkbox-icon {
   width: 16px;
   height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 5px;
   border: 2px solid #2a2a2a;
   border-radius: 4px;
@@ -504,6 +518,7 @@ color: var(--theme-accent);
 .checkbox-link {
   position: relative;
   color: var(--theme-accent);
+  margin-left: 5px;
 }
 
 .checkbox-link::after {
@@ -748,9 +763,6 @@ color: var(--theme-accent);
   fill: currentColor;
 }
 
-.team-link-svg:last-child {
-  margin-right: 0px;
-}
 
 .client-section {
   display: flex;
@@ -951,8 +963,11 @@ color: var(--theme-accent);
 .container-footer {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px 0 15px;
+  display: flex;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo-footer {
